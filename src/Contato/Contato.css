@@ -1,0 +1,151 @@
+.contenteContato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,var(--cor-laranja-escuro), var(--cor-laranja-claro));
+  padding: 50px;
+}
+
+.contatomap{
+  display: flex;
+  color:var(--cor-texto-escuro);
+  font-family: 'Assistant', sans-serif;
+}
+
+.contatolinks{
+  display: grid;
+  gap: 30px;
+  padding: 25px 30px;
+  background: var(--cor-primaria) ;
+  width: clamp(230px, 22vw, 9999px);
+  box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.9); /* sombra bonita */
+}
+
+.contatotitle{
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+}
+
+.conteudocontato{
+  display: grid;
+  gap: 5px;
+  a{
+  text-decoration: none;
+  color: var(--cor-texto-escuro);
+  font-size: 16px;
+  }
+}
+
+.contato{
+  display: grid;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.contatodescricao{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+   img{
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.contatodescricao:hover{
+  color: var(--cor-secundaria);
+}
+
+.linkicon{
+  display: flex;
+  gap: 15px;
+}
+
+.redesicon{
+  color: var(--cor-laranja-claro);
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+.redesicon:hover{
+  transform: scale(1.1);
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+.linksapp{
+  display: grid;
+  a{
+    text-decoration: none;
+     color: var(--cor-texto-escuro);
+     font-weight: 300;
+     transition: all 0.3s ease;
+  }
+  a:hover{
+    color: var(--cor-laranja-claro);
+  }
+}
+
+.linkTitle{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.app{
+  display: grid;
+  width: 130px;
+  img{
+    width: 100%;
+  }
+}
+
+.map{
+  width: 40vw;
+  border: none;
+  overflow: hidden; /* esconde cantos do mapa */
+  box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.7); /* sombra bonita */
+}
+
+.iframeMaP{
+    width:100%;
+    height:100%;
+    Border: none;
+}
+
+
+@media (max-width: 1000px) {
+   .contatomap{
+    display: grid;
+    justify-items: center;
+    width: 80vw;
+  }
+  .contato{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contatolinks{
+    width: clamp(200px, 80%, 9999px);
+  }
+  .map{
+    display: flex;
+    justify-content: center;
+    width: clamp(250px, calc(80% + 60px), 9999px);
+    height: 250px;
+  }
+  .iframeMaP{
+    width:100%;
+  }
+}
+
+@media (max-width: 550px){
+  .contato{
+    display: grid;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,18 @@
+.contenteSobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cor-secundaria) ;
+  padding: 50px;
+}
+
+.titleimg{
+  height: 30px;
+}
+
+.sobre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}

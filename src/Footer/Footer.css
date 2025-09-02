@@ -1,0 +1,37 @@
+.contenteFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  padding: 10px;
+}
+
+.direitos{
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  color: var(--cor-texto-escuro);
+}
+
+.dev {
+  font-weight: 300;
+  color: var(--cor-secundaria);
+  text-justify: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease; /* 👈 transição suave */
+}
+
+.dev:hover {
+ color: var(--cor-laranja-claro);
+}
+
+@media (max-width: 450px) {
+  .reservados{
+      display: grid;
+      font-size: 14px;
+      justify-items: center;
+  }
+ }

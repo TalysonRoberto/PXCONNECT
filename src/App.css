@@ -1,0 +1,32 @@
+HTML,body{
+  margin: 0px; 
+   scroll-behavior: smooth;
+}
+
+.centralizadiv{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 80vw;
+}
+
+.titulos{
+  width: 80vw;
+  font-size: 40px;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  color: var(  --cor-secundaria);
+}
+
+:root {
+  --cor-primaria: #121211; 
+  --cor-secundaria: #F8F7F7; 
+  --cor-laranja-escuro: #fd5b2c;
+  --cor-laranja-claro: #FFAA37;
+  --cor-amarelo-claro: #FEC502;
+  --cor-texto-escuro: #95908E;
+  --cor-cinza-escuro: #2D2B2A;
+  --cor-preto: #000;
+  --cor-branco: #fff;
+}

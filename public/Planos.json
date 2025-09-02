@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "plano": "GAME TURBO",
+    "donwload": "600",
+    "upload": "300",
+    "valor": "129,90"
+  },
+  {
+    "id": "02",
+    "plano": "INFINITY",
+    "donwload": "400",
+    "upload": "200",
+    "valor": "99,90"
+  },
+  {
+    "id": "03",
+    "plano": "PRIME",
+    "donwload": "300",
+    "upload": "150",
+    "valor": "89,90"
+  },
+  {
+    "id": "04",
+    "plano": "SMART",
+    "donwload": "200",
+    "upload": "100",
+    "valor": "79,90"
+  },
+  {
+    "id": "05",
+    "plano": "ECONOMIC",
+    "donwload": "80",
+    "upload": "40",
+    "valor": "69,90"
+  }
+]
