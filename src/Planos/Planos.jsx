@@ -2,18 +2,16 @@ import { useEffect } from 'react';
 import React from 'react';
 import './Planos.css';
 import Card from '../Card/Card';
-import planosData from '../data/Planos.json';
 
 const Planos = () => {
-  const [planos, setPlanos] = React.useState(planosData);
+  const [planos, setPlanos] = React.useState([]);
 
-  fetch('/Planos.json')
-    .then((res) => {
-      if (!res.ok) throw new Error('Erros ao carregar Planos');
-      return res.json();
-    })
-    .then((data) => setPlanos(data))
-    .catch((error) => console.error(error));
+  useEffect(() => {
+    fetch('/PXCONNECT/Planos.json')
+      .then((res) => res.json())
+      .then((data) => setPlanos(data))
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
     <div className="contentePlanos" id="planos">
