@@ -7,7 +7,7 @@ const Planos = () => {
   const [planos, setPlanos] = React.useState([]);
 
   useEffect(() => {
-    fetch('/PXCONNECT/Planos.json')
+    fetch('/Planos.json')
       .then((res) => res.json())
       .then((data) => setPlanos(data))
       .catch((err) => console.error(err));
