@@ -159,8 +159,16 @@ ul{
   .redes{
     display: none;
   }
+  .contentLogoContato{
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
   .LogoContato{
     justify-content: center;
+    img{
+      height: 30px;
+    }
   }
   .assinante{
     margin-right: -10px;

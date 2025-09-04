@@ -19,9 +19,11 @@ const Inicio = () => {
                 Internet rápida e estável, do jeito que você precisa.
               </div>
             </div>
-            <a href="#planos">
-              <button className="nossoplano">NOSSOS PLANOS</button>
-            </a>
+            <div>
+              <a href="#planos">
+                <button className="nossoplano">NOSSOS PLANOS</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

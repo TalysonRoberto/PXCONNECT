@@ -6,10 +6,12 @@ import Card from '../Card/Card';
 const Planos = () => {
   const [planos, setPlanos] = React.useState([]);
 
-  fetch(`${import.meta.env.BASE_URL}Planos.json`)
-    .then((res) => res.json())
-    .then((data) => setPlanos(data))
-    .catch((err) => console.error(err));
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}Planos.json`)
+      .then((res) => res.json())
+      .then((data) => setPlanos(data))
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
     <div className="contentePlanos" id="planos">

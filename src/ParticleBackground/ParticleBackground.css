@@ -4,3 +4,10 @@ canvas{
     height: 600px;
     z-index: -100;
 }
+
+@media (max-width: 420px){
+  .canvasBg{
+    width: 100vw;   /* largura total da tela */
+    height: 100vh;  /* altura total da tela */
+  }
+}
