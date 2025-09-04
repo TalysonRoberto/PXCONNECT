@@ -126,7 +126,7 @@ ul{
   nav ul {
     display: none;
     position: absolute;
-    top: 103px;
+    top: 85px;
     left: 40px;
     background: rgba(0, 0, 0, 0.9);
     flex-direction: column;
