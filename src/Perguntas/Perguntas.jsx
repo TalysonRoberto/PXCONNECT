@@ -25,13 +25,6 @@ const Perguntas = () => {
       ],
     },
     {
-      id: '3',
-      titulo: 'O QUE É WI-FI DUAL BAND AC',
-      texto: [
-        'Esses aparelhos são capazes de fornecer as duas frequências para um mesmo ambiente, eliminando possíveis problemas de conexão com dispositivos que operam em somente uma das faixas. Além disso, suportam maiores velocidades de conexão pois utilizam protocolos mais modernos.',
-      ],
-    },
-    {
       id: '4',
       titulo: 'INTERNET LENTA, O QUE FAÇO?',
       texto: [

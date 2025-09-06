@@ -40,6 +40,10 @@
   animation: borderMove 8s linear infinite; /* animação rodando */
 }
 
+.card.menor{
+  height: 260px;
+}
+
 /* Animação do degradê */
 @keyframes borderMove {
   0% {
@@ -81,6 +85,13 @@
   font-weight: 700;
 }
 
+.extras{
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
 .velovidade{
   font-weight: 700;
   font-size: 60px;
@@ -89,13 +100,14 @@
 .megas{
   font-weight: 300; 
   font-size: 20px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
 }
 
 .dados{
   display: grid;
-  gap: 10px;
+  justify-items: center;
+  gap: 5px;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
   font-weight: 400; 
@@ -108,7 +120,7 @@
 }
 
 .valor{
-  margin-top: 20px;
+  margin-top: 15px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 200;
   font-size: 30px;
@@ -122,7 +134,6 @@
 .mes{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 200; 
-  font-size: 20px;
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 5px;
 }

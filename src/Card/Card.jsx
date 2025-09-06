@@ -5,28 +5,46 @@ import up from '../Img/Upload.png';
 import wifi from '../Img/Wi-Fi.png';
 import suport from '../Img/Suporte.png';
 
-const Card = ({ id, plano, donwload, upload, valor }) => {
+const Card = ({ donwload, info, valor, upload, add }) => {
+  let cardClass = '';
+
+  if (donwload === '800') {
+    cardClass = 'infinity';
+  } else if (donwload === '300' || donwload === '200') {
+    cardClass = 'menor';
+  }
+
   return (
-    <div className={`card ${plano === 'INFINITY' ? 'infinity' : ''}`}>
-      <span className="plano">{plano}</span>
+    <div className={`card ${cardClass}`}>
       <span className="velovidade">{donwload}</span>
       <span className="megas">Megas</span>
+
       <div className="dados">
+        {/* Renderiza imagens extras se existirem */}
+        {add && add.length > 0 && (
+          <div className="extras">
+            {add.map((str, key) => (
+              <img
+                key={key}
+                src={`${import.meta.env.BASE_URL}${str}`}
+                alt="benefício extra"
+              />
+            ))}
+          </div>
+        )}
+
         <span>
-          <img src={donw} alt="" /> {donwload} Megas de Download
+          <img src={donw} alt="Download" /> {donwload} Megas de Download
         </span>
         <span>
-          <img src={up} alt="" /> {upload} Megas de Upload
+          <img src={up} alt="Upload" /> {upload} Megas de Upload
         </span>
-        <span>
-          <img src={wifi} alt="" /> Wi-fi Dual Band AC
-        </span>
-        <span>
-          <img src={suport} alt="" /> Suporte Especializado
-        </span>
+        {info && <span>{info}</span>}
       </div>
-      <span className="valor">RS {valor}</span>
+
+      <span className="valor">R$ {valor}</span>
       <span className="mes">Por mês</span>
+
       <a
         className="assinar"
         href={`https://api.whatsapp.com/send/?phone=5585981096361&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+plano+de+${donwload}+Megas&type=phone_number&app_absent=0`}

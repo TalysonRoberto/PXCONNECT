@@ -7,7 +7,7 @@ const Planos = () => {
   const [planos, setPlanos] = React.useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}Planos.json`)
+    fetch(`${import.meta.env.BASE_URL}Planos_Atu.json`)
       .then((res) => res.json())
       .then((data) => setPlanos(data))
       .catch((err) => console.error(err));
@@ -21,10 +21,11 @@ const Planos = () => {
           {planos.map((plan) => (
             <Card
               key={plan.id}
-              plano={plan.plano}
               donwload={plan.donwload}
               upload={plan.upload}
               valor={plan.valor}
+              info={plan.info}
+              add={plan.add}
             />
           ))}
         </div>
