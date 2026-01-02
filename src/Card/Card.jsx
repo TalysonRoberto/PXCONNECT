@@ -5,18 +5,10 @@ import up from '../Img/Upload.png';
 import wifi from '../Img/Wi-Fi.png';
 import suport from '../Img/Suporte.png';
 
-const Card = ({ donwload, info, valor, upload, add }) => {
-  let cardClass = '';
-
-  if (donwload === '800') {
-    cardClass = 'infinity';
-  } else if (donwload === '300' || donwload === '200') {
-    cardClass = 'menor';
-  }
-
+const Card = ({ download, info, valor, upload, add }) => {
   return (
-    <div className={`card ${cardClass}`}>
-      <span className="velovidade">{donwload}</span>
+    <div className="card">
+      <span className="velovidade">{download}</span>
       <span className="megas">Megas</span>
 
       <div className="dados">
@@ -34,7 +26,7 @@ const Card = ({ donwload, info, valor, upload, add }) => {
         )}
 
         <span>
-          <img src={donw} alt="Download" /> {donwload} Megas de Download
+          <img src={donw} alt="Download" /> {download} Megas de Download
         </span>
         <span>
           <img src={up} alt="Upload" /> {upload} Megas de Upload
@@ -47,7 +39,7 @@ const Card = ({ donwload, info, valor, upload, add }) => {
 
       <a
         className="assinar"
-        href={`https://api.whatsapp.com/send/?phone=5585981096361&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+plano+de+${donwload}+Megas&type=phone_number&app_absent=0`}
+        href={`https://api.whatsapp.com/send/?phone=5585981096361&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+plano+de+${download}+Megas&type=phone_number&app_absent=0`}
         target="_blank"
         rel="noopener noreferrer"
       >

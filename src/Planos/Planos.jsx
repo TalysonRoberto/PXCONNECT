@@ -21,7 +21,7 @@ const Planos = () => {
           {planos.map((plan) => (
             <Card
               key={plan.id}
-              donwload={plan.donwload}
+              download={plan.download}
               upload={plan.upload}
               valor={plan.valor}
               info={plan.info}

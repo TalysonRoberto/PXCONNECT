@@ -11,6 +11,7 @@
   overflow: hidden;
   box-shadow: 10px 10px 15px var(--cor-preto);
   transition: all 0.3s ease;
+  height: 380px;
 }
 
 /* Borda degradê animada */
@@ -40,9 +41,6 @@
   animation: borderMove 8s linear infinite; /* animação rodando */
 }
 
-.card.menor{
-  height: 260px;
-}
 
 /* Animação do degradê */
 @keyframes borderMove {
