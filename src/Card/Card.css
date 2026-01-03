@@ -15,22 +15,21 @@
 }
 
 .menor{
+  .megas{
+    position: absolute;
+    top: 95px;
+  }
   .dados{
-    gap: 0px;
-    height: 50px;
+    margin-top: -120px;
     height: 80px;
   }
   .valor{ 
-    margin-bottom: 40px;
-    margin-top: -15px;
+    position: absolute;
+    bottom: 75px;
   }
   .mes{
-    margin-bottom: 120px;
-    margin-top: -50px; 
-  }
-  .megas{
-    margin-top: -30px;
-    margin-bottom: -15px;
+    position: absolute;
+    bottom: 62px;
   }
   .assinar{
     position: absolute;
@@ -145,7 +144,7 @@
 .valor{
   margin-top: 25px;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 30px;
   background: linear-gradient(90deg, var(--cor-laranja-claro) , var(--cor-laranja-escuro));
   -webkit-background-clip: text;
