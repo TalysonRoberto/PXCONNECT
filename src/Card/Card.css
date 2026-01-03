@@ -16,9 +16,25 @@
 
 .menor{
   .dados{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 100px;
+    gap: 0px;
+    height: 50px;
+    height: 80px;
+  }
+  .valor{ 
+    margin-bottom: 40px;
+    margin-top: -15px;
+  }
+  .mes{
+    margin-bottom: 120px;
+    margin-top: -50px; 
+  }
+  .megas{
+    margin-top: -30px;
+    margin-bottom: -15px;
+  }
+  .assinar{
+    position: absolute;
+    bottom: 19px;
   }
 }
 
