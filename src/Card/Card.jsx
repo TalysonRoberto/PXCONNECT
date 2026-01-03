@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 import donw from '../Img/donwload.png';
 import up from '../Img/Upload.png';
@@ -6,8 +6,10 @@ import wifi from '../Img/Wi-Fi.png';
 import suport from '../Img/Suporte.png';
 
 const Card = ({ download, info, valor, upload, add }) => {
+  const cardClass = download < '400' ? 'card menor' : 'card';
+
   return (
-    <div className="card">
+    <div className={cardClass}>
       <span className="velovidade">{download}</span>
       <span className="megas">Megas</span>
 

@@ -14,6 +14,14 @@
   height: 380px;
 }
 
+.menor{
+  .dados{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 100px;
+  }
+}
+
 /* Borda degradê animada */
 .card::before {
   content: "";
@@ -104,6 +112,7 @@
 
 .dados{
   display: grid;
+  height: 150px;
   justify-items: center;
   gap: 5px;
   font-family: 'Fira Sans', sans-serif;
@@ -118,7 +127,7 @@
 }
 
 .valor{
-  margin-top: 15px;
+  margin-top: 25px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 200;
   font-size: 30px;
@@ -133,5 +142,4 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 200; 
   font-size: 10px;
-  margin-bottom: 5px;
 }

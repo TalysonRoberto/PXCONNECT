@@ -25,8 +25,15 @@ const Contato = () => {
                   target="_blank"
                 >
                   <span className="contatodescricao">
-                    {' '}
                     <img src={phone} alt="phone" /> 85 98109-6361
+                  </span>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5585986117720&text=Ol%C3%A1%2C+iniciar+atendimento.&type=phone_number&app_absent=0"
+                  target="_blank"
+                >
+                  <span className="contatodescricao">
+                    <img src={phone} alt="phone" /> 85 98611-7720
                   </span>
                 </a>
               </div>

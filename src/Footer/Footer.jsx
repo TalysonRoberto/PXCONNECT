@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="centralizadiv">
         <div className="direitos">
           <span className="reservados">
-            @ {anoAtual} PX CONNECR. Todos os direitos <span>reservados</span>
+            @ {anoAtual} PX CONNECT. Todos os direitos <span>reservados</span>
           </span>
           <span>
             Desenvolvedor :{' '}
